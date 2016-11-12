@@ -11,3 +11,6 @@ script:
   - emacs -batch --eval
     "(progn (setq byte-compile-error-on-warn t) (batch-byte-compile))"
     ./src/.emacs.el
+notifications:
+  on_success: never
+  on_failure: never

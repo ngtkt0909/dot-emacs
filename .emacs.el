@@ -58,9 +58,9 @@
 (which-function-mode t)                   ;; 現在の間数名をモードラインに表示
 (size-indication-mode t)                  ;; ファイルサイズを表示
 
-(when window-system (mouse-wheel-mode t)) ;; ホイールマウスを有効にする
-(when window-system (menu-bar-mode -1))   ;; メニューバーを非表示
-(when window-system (tool-bar-mode -1))   ;; ツールバーを非表示
+(when (and window-system functionp 'mouse-wheel-mode) (mouse-wheel-mode t)) ;; ホイールマウスを有効にする
+(when (and window-system functionp 'menu-bar-mode)    (menu-bar-mode -1))   ;; メニューバーを非表示
+(when (and window-system functionp 'tool-bar-mode)    (tool-bar-mode -1))   ;; ツールバーを非表示
 
 (setq inhibit-startup-screen t)           ;; 起動時の*GNU Emacs*バッファの消去
 (setq inhibit-startup-message t)          ;; 起動時のメッセージを非表示

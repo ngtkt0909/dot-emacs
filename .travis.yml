@@ -9,7 +9,7 @@ addons:
     sources:
       - cassou-emacs
     packages:
-      - emacs23
+      - emacs23-gtk
       - emacs24
 script:
   - $EMACS --version

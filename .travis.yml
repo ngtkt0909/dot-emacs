@@ -1,5 +1,5 @@
 language: generic
-sudo: required
+sudo: false
 env:
   matrix:
     - EMACS=emacs23
@@ -9,11 +9,9 @@ addons:
     sources:
       - cassou-emacs
     packages:
-      - emacs23-gtk
+      - emacs23
       - emacs24
 script:
-  - sudo apt-get update
-  - sudo apt-cache search emacs
   - $EMACS --version
   - $EMACS -batch --eval
     "(progn (setq byte-compile-error-on-warn t) (batch-byte-compile))"

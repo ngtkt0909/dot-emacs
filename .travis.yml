@@ -14,4 +14,5 @@ addons:
       - $EMACS
 
 script:
-  - $EMACS -batch -f batch-byte-compile .emacs.el
+  - emacs --version
+  - emacs -batch -f batch-byte-compile .emacs.el

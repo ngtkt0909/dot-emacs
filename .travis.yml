@@ -10,4 +10,4 @@ script:
   - emacs --version
   - emacs -batch --eval
     "(progn (setq byte-compile-error-on-warn t) (batch-byte-compile))"
-    ./src/*.el
+    ./src/.emacs.el

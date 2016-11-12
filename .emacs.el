@@ -67,20 +67,20 @@
 (setq make-backup-files nil)              ;; バックアップファイルを作成しない
 (setq auto-save-default nil)              ;; 自動保存を行わない
 (setq scroll-preserve-screen-position t)  ;; スクロールしてもカーソルの位置を変えない
-(setq mwheel-follow-mouse t)              ;; 現在のマウスカーソルのウィンドウをスクロール
+(defvar mouse-wheel-follow-mouse t)       ;; 現在のマウスカーソルのウィンドウをスクロール
 (setq kill-whole-line t)                  ;; Ctrl-Kで行末の改行を含めて行全体を削除
 
 ;;----------------------------------------------------------------------
 ;; 左側に行数を表示
 ;;----------------------------------------------------------------------
 (global-linum-mode t)
-(setq linum-format "%4d ")
+(defvar linum-format "%4d ")
 
 ;;----------------------------------------------------------------------
 ;; 対応する括弧を強調表示
 ;;----------------------------------------------------------------------
-(setq show-paren-delay 0)
-(setq show-paren-style 'single)
+(defvar show-paren-delay 0)
+(defvar show-paren-style 'single)
 (show-paren-mode t)
 
 ;;----------------------------------------------------------------------
@@ -99,13 +99,12 @@
 (setq-default indent-tabs-mode t)  ;; インデントにタブ文字を使用
 ;;(setq-default indent-tabs-mode nil)  ;; インデントに半角スペースを使用
 (setq indent-line-function 'indent-relative-maybe)
-(setq c-tab-always-indent t)
-(setq c-tab-always-indent t)       ;; Tabキーでインデントを実行
-(setq c-basic-offset tab-width)    ;; c-default-style の設定によらずインデント幅はタブ一つ分
-(setq c-default-style
-      '((java-mode . "java")
-        (awk-mode  . "awk")
-        (other     . "gnu")))      ;; see, variable `c-style-alist'
+(defvar c-tab-always-indent t)     ;; Tabキーでインデントを実行
+(defvar c-basic-offset tab-width)  ;; c-default-style の設定によらずインデント幅はタブ一つ分
+(defvar c-default-style
+  '((java-mode . "java")
+    (awk-mode  . "awk")
+    (other     . "gnu")))          ;; see, variable `c-style-alist'
 
 ;;----------------------------------------------------------------------
 ;; 画面端まで到達した行の表示方法

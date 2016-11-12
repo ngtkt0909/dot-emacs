@@ -6,7 +6,7 @@ My Emacs configuration file.
 ## Install
 Copy `.emacs.el` into home directory:
 ```shell
-	$ cp .emacs.el ~
+$ cp .emacs.el ~
 ```
 
 ## License

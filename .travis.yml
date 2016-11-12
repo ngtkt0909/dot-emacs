@@ -5,7 +5,7 @@ addons:
     sources:
       - ubuntu-elisp
     packages:
-      - emacs24
+      - emacs23-gtk
 script:
   - emacs --version
   - emacs -batch --eval

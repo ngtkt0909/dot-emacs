@@ -1,0 +1,17 @@
+sudo: false
+language: emacs-lisp
+
+env:
+  - EMACS=emacs
+  - EMACS=emacs23
+  - EMACS=emacs24
+
+install: true
+
+addons:
+  apt:
+    packages:
+      - $EMACS
+
+script:
+  - $EMACS -batch -f batch-byte-compile .emacs.el

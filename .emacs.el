@@ -67,7 +67,7 @@
 (setq make-backup-files nil)              ;; バックアップファイルを作成しない
 (setq auto-save-default nil)              ;; 自動保存を行わない
 (setq scroll-preserve-screen-position t)  ;; スクロールしてもカーソルの位置を変えない
-(setq mouse-wheel-follow-mouse t)         ;; 現在のマウスカーソルのウィンドウをスクロール
+(setq mwheel-follow-mouse t)              ;; 現在のマウスカーソルのウィンドウをスクロール
 (setq kill-whole-line t)                  ;; Ctrl-Kで行末の改行を含めて行全体を削除
 
 ;;----------------------------------------------------------------------

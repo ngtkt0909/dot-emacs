@@ -1,5 +1,11 @@
 # dot-emacs
 
+* master:  
+[![Build Status](https://travis-ci.org/ngtkt0909/dot-emacs.svg?branch=master)](https://travis-ci.org/ngtkt0909/dot-emacs)
+
+* develop:  
+[![Build Status](https://travis-ci.org/ngtkt0909/dot-emacs.svg?branch=develop)](https://travis-ci.org/ngtkt0909/dot-emacs)
+
 ## Overview
 My Emacs configuration file.
 

@@ -1,14 +1,19 @@
 language: generic
 sudo: false
+env:
+  matrix:
+    - EMACS=emacs23
+    - EMACS=emacs24
 addons:
   apt:
     sources:
-      - ubuntu-elisp
+      - cassou-emacs
     packages:
       - emacs23-gtk
+      - emacs24
 script:
-  - emacs --version
-  - emacs -batch --eval
+  - $EMACS --version
+  - $EMACS -batch --eval
     "(progn (setq byte-compile-error-on-warn t) (batch-byte-compile))"
     ./src/.emacs.el
 notifications:

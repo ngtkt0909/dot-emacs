@@ -10,9 +10,16 @@
 My Emacs configuration file.
 
 ## Install
-Copy `.emacs.el` into home directory:
+Compile `.emacs.el`, and copy `.emacs.elc` into your home directory:
 ```shell
-$ cp .emacs.el ~
+$ make
+$ make install
+```
+
+## Uninstall
+Remove `.emacs.elc` in your home directory:
+```shell
+$ make uninstall
 ```
 
 ## License

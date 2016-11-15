@@ -1,0 +1,20 @@
+language: generic
+sudo: false
+env:
+  matrix:
+    - EMACS=emacs23
+    - EMACS=emacs24
+addons:
+  apt:
+    sources:
+      - cassou-emacs
+    packages:
+      - emacs23-gtk
+      - emacs24
+script:
+  - make
+  - make install
+  - make uninstall
+notifications:
+  on_success: never
+  on_failure: never

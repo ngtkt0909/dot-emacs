@@ -1,12 +1,25 @@
 # dot-emacs
 
+* master:  
+[![Build Status](https://travis-ci.org/ngtkt0909/dot-emacs.svg?branch=master)](https://travis-ci.org/ngtkt0909/dot-emacs)
+
+* develop:  
+[![Build Status](https://travis-ci.org/ngtkt0909/dot-emacs.svg?branch=develop)](https://travis-ci.org/ngtkt0909/dot-emacs)
+
 ## Overview
 My Emacs configuration file.
 
 ## Install
-Copy `.emacs.el` into home directory:
+Compile `.emacs.el`, and copy `.emacs.elc` into your home directory:
 ```shell
-	$ cp .emacs.el ~
+$ make
+$ make install
+```
+
+## Uninstall
+Remove `.emacs.elc` in your home directory:
+```shell
+$ make uninstall
 ```
 
 ## License

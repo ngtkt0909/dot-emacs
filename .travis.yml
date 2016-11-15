@@ -12,10 +12,7 @@ addons:
       - emacs23-gtk
       - emacs24
 script:
-  - $EMACS --version
-  - $EMACS -batch --eval
-    "(progn (setq byte-compile-error-on-warn t) (batch-byte-compile))"
-    ./src/.emacs.el
+  - make
 notifications:
   on_success: never
   on_failure: never

@@ -9,7 +9,10 @@ TGT_HOME  = ~/.emacs.elc
 all:
 	${EMACS} --version
 	${EMACS} -batch --eval \
-		"(progn (setq byte-compile-error-on-warn t) (batch-byte-compile))" \
+		"(progn \
+			(setq byte-compile-warnings '(not free-vars)) \
+			(setq byte-compile-error-on-warn t) \
+			(batch-byte-compile))" \
 		$(SRC)
 
 clean:

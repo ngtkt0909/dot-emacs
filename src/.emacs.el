@@ -108,6 +108,14 @@
     (awk-mode  . "awk")
     (other     . "gnu")))          ;; see, variable `c-style-alist'
 
+;; python-modeのインデント設定
+(add-hook 'python-mode-hook
+		  (lambda()
+			(setq indent-tabs-mode t)
+			(setq indent-level 4)
+			(setq python-indent 4)
+			(setq tab-width 4)))
+
 ;;----------------------------------------------------------------------
 ;; 画面端まで到達した行の表示方法
 ;;----------------------------------------------------------------------

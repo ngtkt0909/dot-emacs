@@ -67,7 +67,7 @@
 (setq make-backup-files nil)              ;; バックアップファイルを作成しない
 (setq auto-save-default nil)              ;; 自動保存を行わない
 (setq scroll-preserve-screen-position t)  ;; スクロールしてもカーソルの位置を変えない
-(defvar mouse-wheel-follow-mouse t)       ;; 現在のマウスカーソルのウィンドウをスクロール
+(setq mouse-wheel-follow-mouse t)         ;; 現在のマウスカーソルのウィンドウをスクロール
 (setq kill-whole-line t)                  ;; Ctrl-Kで行末の改行を含めて行全体を削除
 
 ;;----------------------------------------------------------------------
@@ -101,9 +101,9 @@
 (setq-default indent-tabs-mode t)  ;; インデントにタブ文字を使用
 ;;(setq-default indent-tabs-mode nil)  ;; インデントに半角スペースを使用
 (setq indent-line-function 'indent-relative-maybe)
-(defvar c-tab-always-indent t)     ;; Tabキーでインデントを実行
-(defvar c-basic-offset tab-width)  ;; c-default-style の設定によらずインデント幅はタブ一つ分
-(defvar c-default-style
+(setq c-tab-always-indent t)       ;; Tabキーでインデントを実行
+(setq c-basic-offset tab-width)    ;; c-default-style の設定によらずインデント幅はタブ一つ分
+(setq c-default-style
   '((java-mode . "java")
     (awk-mode  . "awk")
     (other     . "gnu")))          ;; see, variable `c-style-alist'

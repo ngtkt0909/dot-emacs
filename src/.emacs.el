@@ -78,6 +78,26 @@
 (setq linum-format "%4d ")
 
 ;;----------------------------------------------------------------------
+;; 空白文字を表示
+;;----------------------------------------------------------------------
+(when (require 'whitespace nil t)
+  (setq whitespace-style '(face tabs tab-mark spaces space-mark trailing))
+  (setq whitespace-display-mappings
+		'((space-mark ?\u3000 [?\u25a1])
+		  (tab-mark ?\t [?\u226b ?\t] [?\\ ?\t])))
+  (setq whitespace-space-regexp "\\(\u3000+\\)")
+  (set-face-attribute 'whitespace-tab nil
+					  :foreground "Red"
+					  :underline t)
+  (set-face-attribute 'whitespace-space nil
+					  :foreground "Red"
+					  :underline t)
+  (set-face-attribute 'whitespace-trailing nil
+					  :foreground "Red"
+					  :underline t)
+  (global-whitespace-mode 1))
+
+;;----------------------------------------------------------------------
 ;; 対応する括弧を強調表示
 ;;----------------------------------------------------------------------
 (require 'paren)

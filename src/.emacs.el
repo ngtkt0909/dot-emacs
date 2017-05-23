@@ -88,12 +88,15 @@
   (setq whitespace-space-regexp "\\(\u3000+\\)")
   (set-face-attribute 'whitespace-tab nil
 					  :foreground "Red"
+					  :background "Black"
 					  :underline t)
   (set-face-attribute 'whitespace-space nil
 					  :foreground "Red"
+					  :background "Black"
 					  :underline t)
   (set-face-attribute 'whitespace-trailing nil
 					  :foreground "Red"
+					  :background "Black"
 					  :underline t)
   (global-whitespace-mode 1))
 

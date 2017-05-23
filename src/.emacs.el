@@ -89,11 +89,11 @@
   (set-face-attribute 'whitespace-tab nil
 					  :foreground "Red"
 					  :background "Black"
-					  :underline t)
+					  :underline nil)
   (set-face-attribute 'whitespace-space nil
 					  :foreground "Red"
 					  :background "Black"
-					  :underline t)
+					  :underline nil)
   (set-face-attribute 'whitespace-trailing nil
 					  :foreground "Red"
 					  :background "Black"

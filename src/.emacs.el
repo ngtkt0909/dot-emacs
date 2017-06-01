@@ -84,7 +84,7 @@
   (setq whitespace-style '(face tabs tab-mark spaces space-mark trailing))
   (setq whitespace-display-mappings
 		'((space-mark ?\u3000 [?\u25a1])
-		  (tab-mark ?\t [?\u226b ?\t] [?\\ ?\t])))
+		  (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
   (setq whitespace-space-regexp "\\(\u3000+\\)")
   (set-face-attribute 'whitespace-tab nil
 					  :foreground "Red"

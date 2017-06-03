@@ -87,16 +87,16 @@
 		  (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
   (setq whitespace-space-regexp "\\(\u3000+\\)")
   (set-face-attribute 'whitespace-tab nil
-					  :foreground "Red"
-					  :background "Black"
+					  :foreground "red"
+					  :background "black"
 					  :underline nil)
   (set-face-attribute 'whitespace-space nil
-					  :foreground "Red"
-					  :background "Black"
+					  :foreground "red"
+					  :background "black"
 					  :underline nil)
   (set-face-attribute 'whitespace-trailing nil
-					  :foreground "Red"
-					  :background "Black"
+					  :foreground "red"
+					  :background "black"
 					  :underline t)
   (global-whitespace-mode 1))
 
